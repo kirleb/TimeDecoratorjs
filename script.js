@@ -1,5 +1,5 @@
 console.log(window.navigator.hardwareConcurrency)
-let a = loggingDecorator(hi, 'Timing Thing')();
+let a = loggingDecorator(test, 'Timing Thing')();
 appendToOutput(a);
 
 
@@ -15,11 +15,11 @@ function loggingDecorator(wrapped, name) {
 }
 
 
-async function hi() {
+async function test() {
   let b = [...Array(4)]
   let a = new Promise((resolve, reject) => {
     setTimeout(() => {
-      b.map(() => console.log('hi'));
+      b.map(() => console.log('test'));
       resolve('done!');
     }, 3000)
   });

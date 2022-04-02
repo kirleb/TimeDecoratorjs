@@ -17,7 +17,7 @@ function loggingDecorator(wrapped, name) {
 
 async function test() {
   let b = [...Array(4)]
-  let a = new Promise((resolve, reject) => {
+  let a = new Promise((resolve) => {
     setTimeout(() => {
       b.map(() => console.log('test'));
       resolve('done!');
